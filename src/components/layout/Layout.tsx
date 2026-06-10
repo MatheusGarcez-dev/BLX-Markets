@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import { LoaderGateProvider, useLoaderGate } from '../../context/LoaderGateContext'
 import { Header } from './Header'
 import { Footer } from './Footer'
+import { TradingViewTicker } from '../tradingview/TradingViewTicker'
 import { PageLoader } from '../ui/PageLoader'
 import { useLenis } from '../../hooks/useLenis'
 import { useScrollReveal } from '../../hooks/useScrollReveal'
@@ -59,9 +60,12 @@ function LayoutContent() {
     <div className="flex min-h-screen flex-col">
       <PageLoader />
       <Header />
+      <div className="fixed top-16 right-0 left-0 z-[99] lg:top-[4.25rem]">
+        <TradingViewTicker />
+      </div>
       <main
         id="main"
-        className="relative z-0 flex-1 pt-16 lg:pt-[4.25rem]"
+        className="relative z-0 flex-1 pt-[7.25rem] lg:pt-[7.75rem]"
       >
         <Outlet />
       </main>
