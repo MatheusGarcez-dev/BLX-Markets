@@ -9,6 +9,7 @@ const exploreLinks = [
   { to: '/', label: 'Home' },
   { to: '/account-types', label: 'Account types' },
   { to: '/platform', label: 'Platform' },
+  { to: '/pamm', label: 'PAMM' },
   { to: '/about', label: 'About' },
 ] as const
 

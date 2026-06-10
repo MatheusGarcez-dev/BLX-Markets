@@ -4,7 +4,6 @@ import { Button } from '../components/ui/Button'
 import { BlxGlowCard } from '../components/ui/BlxGlowCard'
 import { Reveal, RevealGroup } from '../components/ui/Reveal'
 import { SectionTitle } from '../components/ui/SectionTitle'
-import { TradingViewMarketOverview } from '../components/tradingview/TradingViewMarketOverview'
 import {
   accountExperience,
   accounts,
@@ -80,10 +79,11 @@ export function AccountTypes() {
         </div>
       </section>
 
-      <section className="blx-container grid gap-12 py-16 md:py-20 lg:grid-cols-12 lg:gap-14">
-        <RevealGroup className="space-y-8 lg:col-span-5">
+      <section className="blx-container py-16 md:py-20">
+        <RevealGroup className="mx-auto max-w-2xl space-y-8">
           <Reveal>
             <SectionTitle
+              align="center"
               eyebrow={accountExperience.eyebrow}
               title={accountExperience.title}
               description={accountExperience.lead}
@@ -91,16 +91,15 @@ export function AccountTypes() {
           </Reveal>
           {accountExperience.paragraphs.map((paragraph, i) => (
             <Reveal key={i}>
-              <p className="text-sm leading-relaxed text-blx-text-muted md:text-base">{paragraph}</p>
+              <p className="text-center text-sm leading-relaxed text-blx-text-muted md:text-base">
+                {paragraph}
+              </p>
             </Reveal>
           ))}
-          <Reveal>
+          <Reveal className="text-center">
             <Button to="/platform">Access the platform</Button>
           </Reveal>
         </RevealGroup>
-        <Reveal className="min-w-0 lg:col-span-7">
-          <TradingViewMarketOverview height={480} />
-        </Reveal>
       </section>
 
       <section className="blx-container border-t border-white/[0.06] py-16 md:py-20">

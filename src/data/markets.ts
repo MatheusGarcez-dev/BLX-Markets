@@ -55,16 +55,16 @@ export const tickerSymbols = marketTabs.flatMap((tab) =>
 export const chartWatchlist = marketTabs.flatMap((tab) => tab.symbols.map((sym) => sym.s))
 
 export const heroSymbolOverview = [
-  ['EUR/USD', 'FX:EURUSD|FX'],
   ['Gold', 'TVC:GOLD'],
   ['S&P 500', 'FOREXCOM:SPXUSD'],
   ['Bitcoin', 'BITSTAMP:BTCUSD'],
   ['Ethereum', 'BITSTAMP:ETHUSD'],
+  ['EUR/USD', 'FX:EURUSD|FX'],
 ] as const
 
 export const assetClassCharts: { title: string; symbol: string; label: string }[] = [
   { title: 'Cryptocurrency', symbol: 'BITSTAMP:BTCUSD', label: 'BTC/USD' },
   { title: 'CFD Indices', symbol: 'FOREXCOM:SPXUSD', label: 'S&P 500' },
   { title: 'Precious Metals', symbol: 'TVC:GOLD', label: 'Gold' },
-  { title: 'Currency Pairs', symbol: 'FX:EURUSD', label: 'EUR/USD' },
+  { title: 'Currency Pairs', symbol: 'FX:GBPUSD', label: 'GBP/USD' },
 ]

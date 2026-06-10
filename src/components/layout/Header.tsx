@@ -9,6 +9,7 @@ const nav = [
   { to: '/', label: 'Home' },
   { to: '/account-types', label: 'Account types' },
   { to: '/platform', label: 'Platform' },
+  { to: '/pamm', label: 'PAMM' },
   { to: '/about', label: 'About' },
   { to: '/faqs', label: 'FAQs' },
   { to: '/contact', label: 'Contact' },
@@ -73,14 +74,19 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="relative z-[101] hidden items-center gap-6 lg:flex">
-          <a
+        <div className="relative z-[101] hidden items-center gap-3 lg:flex">
+          <Button
             href={LOGIN_URL}
-            className={`text-[13px] font-medium ${light ? 'text-[#52525b] hover:text-[#0f0f10]' : 'text-blx-text-muted hover:text-blx-heading'}`}
+            variant="secondary"
+            className={`!px-4 !py-2 !text-[13px] ${
+              light
+                ? '!border-black/10 !bg-black/[0.03] !text-[#3f3f46] hover:!border-black/15 hover:!bg-black/[0.05]'
+                : ''
+            }`}
           >
             Log in
-          </a>
-          <Button href="#register" variant="primary" className="!px-4 !py-2">
+          </Button>
+          <Button href="#register" variant="primary" className="!px-4 !py-2 !text-[13px]">
             Open account
           </Button>
         </div>
@@ -117,10 +123,14 @@ export function Header() {
                 {item.label}
               </NavLink>
             ))}
-            <a href={LOGIN_URL} className="text-sm text-blx-text-muted">
+            <Button
+              href={LOGIN_URL}
+              variant="secondary"
+              className={`w-fit !px-4 !py-2 ${light ? '!border-black/10 !bg-black/[0.03] !text-[#3f3f46]' : ''}`}
+            >
               Log in
-            </a>
-            <Button href="#register" variant="primary" className="w-fit">
+            </Button>
+            <Button href="#register" variant="primary" className="w-fit !px-4 !py-2">
               Open account
             </Button>
           </nav>

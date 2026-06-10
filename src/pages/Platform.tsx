@@ -6,7 +6,6 @@ import { BlxGlowCard } from '../components/ui/BlxGlowCard'
 import { Reveal, RevealGroup } from '../components/ui/Reveal'
 import { SectionTitle } from '../components/ui/SectionTitle'
 import { TradingViewAdvancedChart } from '../components/tradingview/TradingViewAdvancedChart'
-import { TradingViewMarketOverview } from '../components/tradingview/TradingViewMarketOverview'
 import {
   mt5Content,
   platformConclusion,
@@ -50,7 +49,7 @@ export function Platform() {
             </p>
           </Reveal>
           <Reveal className="min-w-0 lg:col-span-7">
-            <TradingViewAdvancedChart />
+            <TradingViewAdvancedChart symbol="TVC:GOLD" />
           </Reveal>
         </RevealGroup>
       </section>
@@ -116,19 +115,6 @@ export function Platform() {
         </RevealGroup>
         <Reveal className="mt-10">
           <Button href={REGISTER_URL}>Register now</Button>
-        </Reveal>
-      </section>
-
-      <section className="blx-container border-t border-white/[0.06] py-16 md:py-20">
-        <Reveal>
-          <SectionTitle
-            eyebrow="Markets"
-            title="Multi-asset overview"
-            description="Browse instruments and timeframes without leaving your workflow."
-          />
-        </Reveal>
-        <Reveal className="mt-12">
-          <TradingViewMarketOverview height={480} />
         </Reveal>
       </section>
 

@@ -6,7 +6,7 @@ import { TradingViewEmbed } from '../tradingview/TradingViewEmbed'
 export function AccountPhoneMockup() {
   const chartConfig = useMemo(
     () => ({
-      symbol: 'FX:EURUSD',
+      symbol: 'TVC:GOLD',
       width: '100%',
       height: '100%',
       locale: 'en',

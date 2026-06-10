@@ -11,6 +11,7 @@ import { PaymentLogos } from '../components/ui/PaymentLogos'
 
 import { Hero, HeroPillars } from '../components/home/Hero'
 import { FeatureGrid } from '../components/sections/FeatureGrid'
+import { PammSection } from '../components/sections/PammSection'
 import { TrustBar } from '../components/sections/TrustBar'
 import { Reveal, RevealGroup } from '../components/ui/Reveal'
 import { whyBlxFeatures } from '../data/siteFeatures'
@@ -20,8 +21,6 @@ import { MarketTerminal } from '../components/home/MarketTerminal'
 import { PlatformMockup } from '../components/platform/PlatformMockup'
 
 import { EditorialMarketBand } from '../components/ui/EditorialMarketBand'
-
-import { TradingViewMarketOverview } from '../components/tradingview/TradingViewMarketOverview'
 
 import { TradingViewMiniChart } from '../components/tradingview/TradingViewMiniChart'
 
@@ -66,23 +65,7 @@ export function Home() {
         align="center"
       />
 
-      <section className="blx-section">
-        <div className="blx-container">
-          <Reveal>
-            <SectionTitle
-              align="center"
-              eyebrow="Watchlist"
-              title="Full multi-asset overview"
-              description="Browse by asset class with live charts and pricing from TradingView."
-            />
-          </Reveal>
-          <Reveal className="mt-12">
-            <TradingViewMarketOverview height={500} />
-          </Reveal>
-        </div>
-      </section>
-
-
+      <PammSection />
 
       <section className="blx-section">
 
@@ -265,12 +248,6 @@ export function Home() {
               <PlatformMockup />
             </Reveal>
           </div>
-        </div>
-
-        <div className="blx-container px-5 pb-16 lg:px-8">
-          <Reveal>
-            <TradingViewMarketOverview light height={440} />
-          </Reveal>
         </div>
 
         <div className="blx-container blx-section !pt-4">

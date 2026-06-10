@@ -6,6 +6,7 @@ import { Platform } from './pages/Platform'
 import { About } from './pages/About'
 import { FAQ } from './pages/FAQ'
 import { Contact } from './pages/Contact'
+import { Pamm } from './pages/Pamm'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="account-types" element={<AccountTypes />} />
           <Route path="platform" element={<Platform />} />
+          <Route path="pamm" element={<Pamm />} />
           <Route path="about" element={<About />} />
           <Route path="faqs" element={<FAQ />} />
           <Route path="contact" element={<Contact />} />
