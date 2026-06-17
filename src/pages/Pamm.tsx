@@ -5,7 +5,7 @@ import { Button } from '../components/ui/Button'
 import { BlxGlowCard } from '../components/ui/BlxGlowCard'
 import { Reveal, RevealGroup } from '../components/ui/Reveal'
 import { SectionTitle } from '../components/ui/SectionTitle'
-import { REGISTER_URL } from '../data/content'
+import { REGISTER_INVESTOR_URL, REGISTER_MANAGER_URL } from '../data/content'
 import {
   pammConclusion,
   pammFeatures,
@@ -114,7 +114,10 @@ export function Pamm() {
             </p>
           </Reveal>
           <Reveal className="flex flex-wrap gap-3 md:col-span-4 md:justify-end">
-            <Button href={REGISTER_URL}>Register</Button>
+            <Button href={REGISTER_MANAGER_URL}>Register as manager</Button>
+            <Button href={REGISTER_INVESTOR_URL} variant="secondary">
+              Register as investor
+            </Button>
             <Button to="/contact" variant="secondary">
               Contact desk
             </Button>

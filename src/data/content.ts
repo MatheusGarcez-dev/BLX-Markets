@@ -1,5 +1,7 @@
-export const REGISTER_URL = '#register'
-export const LOGIN_URL = '#login'
+export const LOGIN_URL = 'https://live-blx.pammsystem.com/login'
+export const REGISTER_URL = 'https://live-blx.pammsystem.com/register-user'
+export const REGISTER_INVESTOR_URL = 'https://live-blx.pammsystem.com/register-user/investor'
+export const REGISTER_MANAGER_URL = 'https://live-blx.pammsystem.com/register-user/money_manager'
 export const SUPPORT_EMAIL = 'support@blxmarkets.com'
 
 export const assetClasses = [

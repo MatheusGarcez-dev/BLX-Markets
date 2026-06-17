@@ -1,6 +1,6 @@
 import { Button } from '../ui/Button'
 import { Reveal } from '../ui/Reveal'
-import { platformIntro, REGISTER_URL } from '../../data/content'
+import { LOGIN_URL, platformIntro, REGISTER_URL } from '../../data/content'
 import { PlatformMockup } from './PlatformMockup'
 
 export function PlatformHero() {
@@ -26,8 +26,8 @@ export function PlatformHero() {
           </Reveal>
           <Reveal hero className="mt-8 flex flex-wrap gap-3">
             <Button href={REGISTER_URL}>Start trading now</Button>
-            <Button href={REGISTER_URL} variant="secondary">
-              Register now
+            <Button href={LOGIN_URL} variant="secondary">
+              Log in
             </Button>
           </Reveal>
         </div>

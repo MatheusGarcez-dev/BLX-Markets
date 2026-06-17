@@ -1,6 +1,6 @@
 import { Button } from '../ui/Button'
 import { Reveal } from '../ui/Reveal'
-import { REGISTER_URL } from '../../data/content'
+import { REGISTER_INVESTOR_URL, REGISTER_MANAGER_URL } from '../../data/content'
 import { pammIntro } from '../../data/pamm'
 import { PammVisual } from './PammVisual'
 
@@ -26,8 +26,8 @@ export function PammHero() {
             <p className="blx-lead mt-6 max-w-xl">{pammIntro.lead}</p>
           </Reveal>
           <Reveal hero className="mt-8 flex flex-wrap gap-3">
-            <Button href={REGISTER_URL}>Register as manager</Button>
-            <Button href={REGISTER_URL} variant="secondary">
+            <Button href={REGISTER_MANAGER_URL}>Register as manager</Button>
+            <Button href={REGISTER_INVESTOR_URL} variant="secondary">
               Register as investor
             </Button>
           </Reveal>

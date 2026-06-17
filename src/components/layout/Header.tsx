@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import logo from '@assets/Logo-BLX-V2-PNG.webp'
 import { Button } from '../ui/Button'
-import { LOGIN_URL } from '../../data/content'
+import { LOGIN_URL, REGISTER_URL } from '../../data/content'
 import { prepareNavigation } from '../../lib/scroll'
 
 const nav = [
@@ -86,7 +86,7 @@ export function Header() {
           >
             Log in
           </Button>
-          <Button href="#register" variant="primary" className="!px-4 !py-2 !text-[13px]">
+          <Button href={REGISTER_URL} variant="primary" className="!px-4 !py-2 !text-[13px]">
             Open account
           </Button>
         </div>
@@ -130,7 +130,7 @@ export function Header() {
             >
               Log in
             </Button>
-            <Button href="#register" variant="primary" className="w-fit !px-4 !py-2">
+            <Button href={REGISTER_URL} variant="primary" className="w-fit !px-4 !py-2">
               Open account
             </Button>
           </nav>
