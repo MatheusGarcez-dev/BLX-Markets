@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { Layout } from './components/layout/Layout'
 import { Home } from './pages/Home'
 import { AccountTypes } from './pages/AccountTypes'
@@ -20,6 +20,7 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="faqs" element={<FAQ />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
     </BrowserRouter>
