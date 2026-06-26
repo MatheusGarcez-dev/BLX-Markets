@@ -75,8 +75,10 @@ export function Platform() {
               {platformDownloads.map((d) => (
                 <li key={d.os}>
                   <a
-                    href="#"
-                    className="platform-download flex items-center justify-between gap-4 py-5 text-sm transition-colors hover:text-blx-heading"
+                    href={REGISTER_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="platform-download flex w-full items-center justify-between gap-4 py-5 text-left text-sm transition-colors hover:text-blx-heading"
                   >
                     <span className="font-medium text-blx-heading">{d.os}</span>
                     <span className="font-mono text-xs tracking-wide text-blx-accent">
