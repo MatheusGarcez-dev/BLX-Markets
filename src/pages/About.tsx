@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { AppLink } from '../components/ui/AppLink'
 import { AboutHero } from '../components/about/AboutHero'
 import { FeatureGrid } from '../components/sections/FeatureGrid'
 import { TrustBar } from '../components/sections/TrustBar'
@@ -75,9 +75,9 @@ export function About() {
             <Button to="/contact" variant="secondary">
               Contact us
             </Button>
-            <Link to="/faqs" className="blx-link self-center">
+            <AppLink to="/faqs" className="blx-link self-center">
               Read FAQ →
-            </Link>
+            </AppLink>
           </Reveal>
         </article>
       </section>

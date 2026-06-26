@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { AppLink } from '../components/ui/AppLink'
 
 import { SectionTitle } from '../components/ui/SectionTitle'
 
@@ -130,9 +130,9 @@ export function Home() {
           </div>
 
           <Reveal className="mt-14">
-            <Link to="/about" className="blx-link">
+            <AppLink to="/about" className="blx-link">
               Read our philosophy →
-            </Link>
+            </AppLink>
           </Reveal>
 
         </div>
